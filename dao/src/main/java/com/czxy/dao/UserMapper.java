@@ -10,6 +10,5 @@ import java.util.List;
 @org.apache.ibatis.annotations.Mapper
 public interface UserMapper extends Mapper<User> {
 
-    @Select("select * from tab_user where username=#{username}")
-    public List<User> findUserByUsername(@Param("username")String username);
+
 }
